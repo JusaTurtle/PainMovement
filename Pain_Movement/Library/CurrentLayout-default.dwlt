@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 61
+  controlID: 116
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
-  controlID: 34
+  controlID: 89
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 534, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 33
+  controlID: 88
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,8 +170,8 @@ MonoBehaviour:
     y: 0
     width: 332
     height: 675
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 16}
@@ -331,7 +331,7 @@ MonoBehaviour:
     height: 654
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 132
+    ID: 134
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: b601000092000000
@@ -402,8 +402,8 @@ MonoBehaviour:
       uniqueId: '[Pain_Movement][suite]'
       name: Pain_Movement
       fullName: Pain_Movement
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1790687
       messages: 
       output: 
       stacktrace: 
@@ -414,13 +414,130 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: WhenNullIsPass_ThrowPlayerNotExists (0.005s)
+    - id: 1003
+      uniqueId: '[H:/Projects/PainTheGame/PainMovement/Pain_Movement/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: H:/Projects/PainTheGame/PainMovement/Pain_Movement/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 0.1000877
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Pain_Movement][suite]'
+    - id: 1004
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.0913763
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[H:/Projects/PainTheGame/PainMovement/Pain_Movement/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.CalculateVelocityTest][suite]
+      name: CalculateVelocityTest
+      fullName: Tests.CalculateVelocityTest
+      resultStatus: 1
+      duration: 0.0765115
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/CalculateVelocityTest/[Tests][Tests.CalculateVelocityTest.WhenDirectionIs01_ShouldReturn01]
+      name: WhenDirectionIs01_ShouldReturn01
+      fullName: Tests.CalculateVelocityTest.WhenDirectionIs01_ShouldReturn01
+      resultStatus: 1
+      duration: 0.0299819
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CalculateVelocityTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/CalculateVelocityTest/[Tests][Tests.CalculateVelocityTest.WhenDirectionIs01AndSpeedIs2_ShouldReturn02]
+      name: WhenDirectionIs01AndSpeedIs2_ShouldReturn02
+      fullName: Tests.CalculateVelocityTest.WhenDirectionIs01AndSpeedIs2_ShouldReturn02
+      resultStatus: 1
+      duration: 0.000784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CalculateVelocityTest][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/CalculateVelocityTest/[Tests][Tests.CalculateVelocityTest.WhenDirectionIs11AndSpeedIs1_ShouldReturnVelocityWithMagtitudeIs1]
+      name: WhenDirectionIs11AndSpeedIs1_ShouldReturnVelocityWithMagtitudeIs1
+      fullName: Tests.CalculateVelocityTest.WhenDirectionIs11AndSpeedIs1_ShouldReturnVelocityWithMagtitudeIs1
+      resultStatus: 1
+      duration: 0.0005469
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CalculateVelocityTest][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/CalculateVelocityTest/[Tests][Tests.CalculateVelocityTest.WhenDirectionIsZero_ShouldReturnZero]
+      name: WhenDirectionIsZero_ShouldReturnZero
+      fullName: Tests.CalculateVelocityTest.WhenDirectionIsZero_ShouldReturnZero
+      resultStatus: 1
+      duration: 0.0004311
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CalculateVelocityTest][suite]
+    m_ResultText: WhenDirectionIs11AndSpeedIs1_ShouldReturnVelocityWithMagtitudeIs1
+      (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fe4b5fde
-      m_LastClickedID: -564179970
-      m_ExpandedIDs: cd4bf494d22a6ff0ff2e760909e24f14751c4d1b46a9ea2b81985c2c8359db4140e10054f2b62254ffffff7f
+      m_SelectedIDs: bd283dde
+      m_LastClickedID: -566417219
+      m_ExpandedIDs: cd4bf494d22a6ff015b22e06ff2e760909e24f14751c4d1b46a9ea2b81985c2c8359db4140e10054f2b622541223a36dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -510,7 +627,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Tests
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -522,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1c340000
     m_LastClickedID: 13340
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000723300007433000076330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,21 +668,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0e3c0000
+    m_ExpandedIDs: ffffffff00000000723300007433000076330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: CalculateVelocityTest
+      m_OriginalName: CalculateVelocityTest
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12054
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -642,7 +760,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 12054
   m_LastVerticalScrollValue: 0
 --- !u!114 &17
 MonoBehaviour:
@@ -673,9 +791,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 74330000
       m_LastClickedID: 0
-      m_ExpandedIDs: 38fbffff
+      m_ExpandedIDs: 3cf8ffffb4f8ffff32f9ffffacf9ffff26faffff9cfaffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -737,7 +855,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0.27538347, y: 1.5744998, z: 1.1778208}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -785,11 +903,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
-    m_Value: {x: -0.24681033, y: 0.6203179, z: -0.21477097, w: -0.7128568}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 7.641206
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -880,11 +998,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 760
-      height: 654
+      height: 633
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 380, y: 327}
+    m_Translation: {x: 380, y: 316.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -892,9 +1010,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -380
-      y: -327
+      y: -316.5
       width: 760
-      height: 654
+      height: 633
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 760, y: 654}
